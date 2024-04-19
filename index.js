@@ -13,6 +13,7 @@ app.engine('jsx', require('express-react-views').createEngine());
 
 const fruits = require('./routes/fruits');
 const vegetables = require('./routes/vegetables');
+const cheeses = require('./routes/cheeses');
 const error = require("./utilities/error");
 
 
@@ -45,6 +46,7 @@ app.use((req, res, next) => {
 // Use our Routes
 app.use("/fruits", fruits);
 app.use("/vegetables", vegetables);
+app.use("/cheeses", cheeses);
 
 app.get("/", (req, res) => {
     res.send("Work in progress!");
