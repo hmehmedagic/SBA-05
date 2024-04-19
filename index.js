@@ -49,7 +49,8 @@ app.use("/vegetables", vegetables);
 app.use("/cheeses", cheeses);
 
 app.get("/", (req, res) => {
-    res.send("Work in progress!");
+    // res.send("Work in progress!");
+    res.render("Index");
 });
 
 // Custom 404 (not found) middleware.
