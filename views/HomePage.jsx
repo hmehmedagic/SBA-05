@@ -12,7 +12,7 @@ export default class Index extends Component {
         <body className="home_body">
         <div>
           <div className="main_container">
-            <img src="https://static.wikia.nocookie.net/armoredcore/images/3/39/Emblem_ACVI_C4-621_Raven.png" alt="picture of a raven" />
+            <img src="https://static.wikia.nocookie.net/armoredcore/images/3/39/Emblem_ACVI_C4-621_Raven.png" alt="picture of a raven" className="raven" />
             <h1 className="main_title">Raven's Nest</h1>
           </div>
           {/* <h2 className="main_title" id="sub_text">Let's See How Far They Can Fly… On Borrowed Wings</h2> */}
@@ -69,7 +69,7 @@ export default class Index extends Component {
             <h2 className="sub_text">g</h2>
             <h2 className="sub_text">s</h2>
           </div>
-          <ul> 
+          <ul className="list"> 
               <li className="list_item"><a href={'/heads'}>Head</a></li>
               <li className="list_item"><a href={'/cores'}>Core</a></li>
               <li className="list_item"><a href={'/legs'}>Legs</a></li>  
