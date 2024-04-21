@@ -1,0 +1,36 @@
+body {
+    background-image: url('https://images5.alphacoders.com/132/1325106.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.index_name {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin: 10px;
+}
+
+.info_container {
+    width: 195px;
+    border: solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #333333;
+    color: white;
+    transition: display 0.3s ease;
+    display: none;
+}
+
+.info_container.show {
+    display: block;
+}

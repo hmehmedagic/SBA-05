@@ -4,16 +4,20 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 // ---------------------------[Require Stmnts]
 
+// Set up express-react-views
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 
 
 
 // ---------------------------[Middleware]
+app.use(express.static('styles'));
+app.use(express.static('scripts'));
+app.use(express.static('images'));
 
-const fruits = require('./routes/fruits');
-const vegetables = require('./routes/vegetables');
-const cheeses = require('./routes/cheeses');
+const heads = require('./routes/heads');
+const cores = require('./routes/cores');
+const legs = require('./routes/legs');
 const error = require("./utilities/error");
 
 
@@ -44,13 +48,13 @@ app.use((req, res, next) => {
 // ---------------------------[Routes]--save
 
 // Use our Routes
-app.use("/fruits", fruits);
-app.use("/vegetables", vegetables);
-app.use("/cheeses", cheeses);
+app.use("/heads", heads);
+app.use("/cores", cores);
+app.use("/legs", legs);
 
 app.get("/", (req, res) => {
     // res.send("Work in progress!");
-    res.render("Index");
+    res.render("HomePage");
 });
 
 // Custom 404 (not found) middleware.

@@ -1,0 +1,87 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes gradientFadeIn {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.home_body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+ul {
+    list-style-type: none;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 12500ms;
+}
+
+a {
+    text-decoration: none;
+    color: #848689;
+    text-shadow: 2px 2px 4px black;
+    font-size: 48px;
+    font-variant: small-caps;
+    font-family: "Kenia", sans-serif;
+}
+
+a:hover {
+    color: #AAA9AD;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 9600ms;
+}
+
+.sub_text_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub_text {
+    color: white;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.sub_text_container::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 0%;
+    height: 50%;
+    background: linear-gradient(to right, transparent 0%, white 100%);
+    animation: gradientFadeIn 2s linear forwards;
+    animation-delay: 10500ms;
+}
+
+.main_title {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    display: flex;
+    justify-content: center;
+}
