@@ -5,6 +5,7 @@ The purpose of this project is to display my understanding of Node and Express, 
 ## Table of Contents
 
 - [Objectives](#objectives)
+- [Dependencies](#Dependencies)
 - [Usage](#usage)
 
 ## Objectives
@@ -14,6 +15,37 @@ The purpose of this project is to display my understanding of Node and Express, 
 - Create Express middleware.
 - Use Express middleware.
 - Use a template engine to render views with Express.
+
+## Dependencies
+
+- First init:
+
+    npm init
+
+- Install Nodemon:
+
+    npm i nodemon --save-dev
+
+- Install Express:
+
+    npm i express
+
+- Install Express-React-Views:
+
+    npm i express-react-views
+
+    OR
+
+    npm i express-react-views --force
+
+    If the first command does not work.
+
+- Call npm start to start the server
+
+    "start": "nodemon index.js"
+
+    Start script in package.json
+
 
 ## Usage
 
