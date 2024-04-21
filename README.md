@@ -22,11 +22,12 @@ Performing a GET request is straightforward. Users simply need to click on a par
 
 ### Post
 Required Key:Value Pairs:
-- name:
-- classification:
-- manufacturer:
-- part_info:
-- url:
+- name: string
+- classification: string
+- manufacturer: string
+- part_info: string
+- url: string
+
 To perform a POST request, users can utilize a tool like Postman. They only need to input the URL corresponding to the part they want to add (e.g., for a head: localhost:3000/heads) and provide the necessary key-value pairs. 
 
 I will list an example of a part to add to each section. If users wish to add a part, they can refer to the [Armored Core VI](https://armoredcore.fandom.com/wiki/ARMORED_CORE_VI_FIRES_OF_RUBICON/Parts) parts wiki, to keep with the theme. Users may try different parts.
