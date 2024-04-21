@@ -33,6 +33,7 @@ To perform a POST request, users can utilize a tool like Postman. They only need
 I will list an example of a part to add to each section. If users wish to add a part, they can refer to the [Armored Core VI](https://armoredcore.fandom.com/wiki/ARMORED_CORE_VI_FIRES_OF_RUBICON/Parts) parts wiki, to keep with the theme. Users may try different parts.
 
 Heads:
+
     ```name: 20-081 MIND ALPHA
 
     classification: Head
@@ -44,6 +45,7 @@ Heads:
     url: https://static.wikia.nocookie.net/armoredcore/images/c/cb/Part_icon_ACVI_20-081_MIND_ALPHA.png/revision/latest/scale-to-width-down/250?cb=20230909045907```
 
 Cores:
+
     ```name: CC-2000 ORBITER
 
     classification: Core
@@ -55,6 +57,7 @@ Cores:
     url: https://static.wikia.nocookie.net/armoredcore/images/5/50/Part_icon_ACVI_CC-2000_ORBITER.png/revision/latest/scale-to-width-down/250?cb=20230909053524```
 
 Legs:
+
     ```name: NACHTREIHER/42E
 
     classification: Legs
@@ -62,7 +65,7 @@ Legs:
     manufacturer: Schneider
 
     part_info: Lightweight bipedal leg parts developed by Schneider. Schneider is a specialist in aerodynamic research, and this model reflects their experiences with a light and highly agile build.
-    
+
     url: https://static.wikia.nocookie.net/armoredcore/images/1/11/Part_icon_ACVI_NACHTREIHER_42E.png/revision/latest/scale-to-width-down/250?cb=20230909052741 ```
 
 ### Patch
